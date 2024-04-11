@@ -1,0 +1,5 @@
+export const LABELS = {
+  TICKERS: "TICEKRS",
+  VIX: "VIX",
+  FEARANDGREED: "FEARANDGREED",
+};
