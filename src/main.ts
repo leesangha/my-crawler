@@ -19,7 +19,8 @@ const startUrls = [
   //   url: "https://m.stock.naver.com/worldstock/index/.VIX/total",
   //   label: LABELS.VIX,
   // },
-  { url: "https://github.com" },
+  // { url: "https://github.com" },
+  { url: "https://github.com", label: LABELS.CARDLIST },
 ];
 
 const crawler = new PlaywrightCrawler({

@@ -1,5 +1,7 @@
-import { Dataset, KeyValueStore, createPlaywrightRouter } from "crawlee";
+import { KeyValueStore, createPlaywrightRouter } from "crawlee";
 import { LABELS } from "./constants/label.js";
+import { Page } from "playwright";
+import { CardList } from "./CardList/index.js";
 
 export const router = createPlaywrightRouter();
 
@@ -148,3 +150,5 @@ router.addHandler(LABELS.VIX, async ({ page }) => {
   const store = await KeyValueStore.open(LABELS.VIX);
   await store.setValue(LABELS.VIX, { value: target });
 });
+
+router.addHandler(LABELS.CARDLIST, CardList);
