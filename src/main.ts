@@ -20,7 +20,7 @@ const startUrls = [
   //   label: LABELS.VIX,
   // },
   // { url: "https://github.com" },
-  { url: "https://github.com", label: LABELS.CARDLIST },
+  { url: "https://github.com", label: LABELS.ALBUMLIST },
 ];
 
 const crawler = new PlaywrightCrawler({
