@@ -2,6 +2,7 @@ import { KeyValueStore, createPlaywrightRouter } from "crawlee";
 import { LABELS } from "./constants/label.js";
 import { Page } from "playwright";
 import { CardList } from "./CardList/index.js";
+import { AlbumList } from "./AlbumList/index.js";
 
 export const router = createPlaywrightRouter();
 
@@ -152,3 +153,5 @@ router.addHandler(LABELS.VIX, async ({ page }) => {
 });
 
 router.addHandler(LABELS.CARDLIST, CardList);
+
+router.addHandler(LABELS.ALBUMLIST, AlbumList);

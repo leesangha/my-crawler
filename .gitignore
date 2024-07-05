@@ -7,3 +7,6 @@ apify_storage
 crawlee_storage
 storage
 .env
+*.json
+*.js
+*spec.ts
